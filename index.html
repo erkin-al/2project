@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Кредитный калькулятор</title>
+</head>
+        <body>
+            <section class = "mainsection">
+                <h1>Кредитный калькулятор</h1>
+                <div class="oneoffour">  
+                        <div class="description">
+                            <p>Начальная сумма вклада $</p>
+                        </div>
+                        <div class="space">    
+                        <input type="text" id="startvalue" value="" class="enterinfo"/>
+                        </div>
+                </div>
+                 <div class="oneoffour">  
+                        <div class="description">
+                            <p>Сумма ежемесячного пополнения $</p>
+                        </div>
+                        <div class="space">    
+                            <input type="text" id="addition" value=""/>
+                        </div>
+                </div>
+                 <div class="oneoffour">  
+                        <div class="description">
+                            <p>Процентная ставка, годовых (%)</p>
+                        </div>
+                        <div class="space">    
+                            <input type="text" id="percent" value=""/>
+                        </div>
+                </div>
+                 <div class="oneoffour">  
+                        <div class="description">
+                            <p>Срок вклада в днях</p>
+                        </div>
+                        <div class="space">    
+                            <input type="text" id="term" value=""/>
+                        </div>
+                </div>          
+                    <button id="calculation" class ="calcButton">Рассчитать доход</button>
+                    <p id="wrongdata" class="nonmistake">Ошибка ввода</p>
+            </section>
+        </body>
+</html>

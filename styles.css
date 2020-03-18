@@ -1,0 +1,33 @@
+.mainsection{
+    width: 550px;
+    background-color: rgb(248, 230, 230);
+}
+.oneoffour{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.description{
+    width: 58%;
+    border: 1px solid black;
+    
+    
+}
+.space{
+    width: 40%;
+    border: 1px solid black;
+}
+h1{
+    text-align: center;
+}
+.enterinfo{
+    
+}
+
+.nonmistake{
+    display: none;
+}
+.mistake{
+    display: block;
+}
+

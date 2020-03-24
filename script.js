@@ -7,14 +7,17 @@ let wrong = document.getElementById("wrongdata");//Присваиваем имя
         rate = +document.getElementById("percent").value;     //Даем ссылку на данные для переменной
         term = +document.getElementById("term").value;        //Даем ссылку на данные для переменной     
         wrong.className = "nonmistake";
-        if (start <= null) {
+        if (start <= 0) {
             console.log("Ошибка- Начальная сумма должна быть больше нуля.");
             wrong.className = "mistake";// указываем автоневидмость полю с ошибкой
-        } else if (rate <= null) {
+        } else if (rate <= 0) {
             console.log("Ошибка- Процентная ставка должна быть больше нуля и не более 100%.");
             wrong.className = "mistake";
-        } else if (term <= null) {
-            console.log("Ошибка- Срок вклада должна быть больше нуля.");
+        } else if (term <= 0) {
+            console.log("Ошибка- Срок вклада должен быть больше нуля.");
+            wrong.className = "mistake";
+        } else if (payment < 0) {
+            console.log("Ошибка- Сумма допвзноса должена быть больше нуля.");
             wrong.className = "mistake";
             // Подсчет по первому месяцу, не учитываем в нем дополнительные взнос, он будет только начиная со второго месяца
         } else if ((start > 0) && (payment >= 0) && (rate > 0) && (rate <= 100) && (term > 0) && (term <= 30) && (Number.isInteger(term))) {
